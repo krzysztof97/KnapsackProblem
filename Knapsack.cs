@@ -65,7 +65,7 @@ namespace KnapsackProblem
             {
                 return mutatedGenomeScore < genomeScore;
             }
-            if(mutatedGenomeScore < KNAPSACK_CAPACITY)
+            if(mutatedGenomeScore <= KNAPSACK_CAPACITY)
             {
                 return mutatedGenomeScore > genomeScore;
             }
